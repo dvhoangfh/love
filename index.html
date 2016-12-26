@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Loves</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta name="description" content="Fullscreen Background Image Slideshow with CSS3 - A Css-only fullscreen background image slideshow" />
+<meta name="keywords" content="css3, css-only, fullscreen, background, slideshow, images, content" />
+<meta name="author" content="Codrops" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="../love/compiled/flipclock.css">
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<link rel="stylesheet" type="text/css" href="css/style1.css" />
+
+<style type="text/css">
+	body{
+		/*background-image: url(background.jpg);
+		background-size: cover;*/
+		/*background-color: black;*/
+	}
+	#getting-started{
+		color: red;
+	}
+	.clock{
+		margin-top: 100px;
+	}
+	.marquee{
+	    color: white;
+    	font-size: 31px;
+	}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="snow.js"></script>
+<script src="countdown.js"></script>
+<script src="../love/compiled/flipclock.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
+<body id="page">
+    <ul class="cb-slideshow">
+        <li><span>Image 01</span><div><p>ONLY LOVE</p></div></li>
+        <li><span>Image 02</span><div><p>HOANG ♥ HONG</p></div></li>
+        <li><span>Image 03</span><div><p>Love.Start();</p></div></li>
+        <li><span>Image 04</span><div><p>4-6-2014</p></div></li>
+        <li><span>Image 05</span><div><p>FOREVER LOVE</p></div></li>
+        <li><span>Image 06</span><div><p></p></div></li>
+        <li><span>Image 06</span><div><p></p></div></li>
+        <li><span>Image 06</span><div><p></p></div></li>
+        <li><span>Image 06</span><div><p></p></div></li>
+        <li><span>Image 06</span><div><p></p></div></li>
+        <li><span>Image 06</span><div><p></p></div></li>
+        <li><span>Image 06</span><div><p></p></div></li>
+        <li><span>Image 06</span><div><p></p></div></li>
+    </ul>
+	<div class="clock" style="margin-left:30em;"></div>
+	<marquee class="marquee" behavior="scroll" direction="left">Khi bạn yêu một ai đó với tất cả trái tim mình, tình yêu đó sẽ không bao giờ mất đi ngay cả khi bạn phải chia xa. Khi bạn yêu một ai đó và dù bạn đã làm tất cả mà vẫn không được đáp lại thì hãy để họ ra đi. Vì nếu tình yêu đó là chân thật thì chắc chắn rằng nó sẽ trở về với bạn. - Khi bạn nhận ra rằng mình muốn chia sẻ quãng đời còn lại với một ai đó, bạn sẽ mong điều đó sớm bắt đầu. - Cuộc sống mà không có tình yêu thì không còn là cuộc sống nữa. - </marquee>
+	<marquee class="marquee" behavior="scroll" direction="left"> </marquee>
+</body>
+<script type="text/javascript">
+	var clock;
+
+	$(document).ready(function() {
+
+		// Grab the current date
+		var currentDate = new Date();
+
+		// Set some date in the past. In this case, it's always been since Jan 1
+		var pastDate  = new Date('6/4/2014');
+
+		// Calculate the difference in seconds between the future and current date
+		var diff = currentDate.getTime() / 1000 - pastDate.getTime() / 1000;
+
+		// Instantiate a coutdown FlipClock
+		clock = $('.clock').FlipClock(diff, {
+			clockFace: 'DailyCounter'
+		});
+	});
+</script>
+<script type="text/javascript">
+	snowStorm.snowCharacter = '♥';
+	snowStorm.flakesMaxActive = 300;
+	snowStorm.flakesMax = 78;
+	snowStorm.snowColor = 'red';
+	//snowStorm.snowColor = '#fff';
+	//snowStorm.animationInterval = 23;
+</script>
+<iframe src="http://www.nhaccuatui.com/mh/background/ssiMkDpzT2Mw" width="1" height="1" frameborder="0" allowfullscreen></iframe>
+</html>
